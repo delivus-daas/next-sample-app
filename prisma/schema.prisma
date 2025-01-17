@@ -18,7 +18,7 @@ model User {
   id              String    @id @default(cuid()) // primary key with CUID
   name            String    @db.VarChar(255) // varchar
   phone           String    @unique @db.VarChar(255) // phone must be unique
-  password        String    @db.VarChar(255)
+  password        String    @db.VarChar(32)
   createdAt       DateTime  @default(now())
   updatedAt       DateTime    @updatedAt
 }

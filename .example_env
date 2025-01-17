@@ -1,0 +1,2 @@
+DATABASE_URL=postgresql://your_user_name:your_user_password@localhost:port/your_database_name?sslmode=true
+AUTH_SECRET=your-secret-key #can generate by "openssl rand -base64 32"
